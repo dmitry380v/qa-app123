@@ -1,0 +1,42 @@
+.questions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.not-answered,
+.answered {
+  width: 48%;
+}
+
+.card {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.question-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.answer-form {
+  margin-bottom: 1rem;
+}
+
+.answers {
+  margin-bottom: 0.5rem;
+}
+
+button {
+  background-color: #6207c9;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color:  #6207c9;
+  cursor: not-allowed;
+}
