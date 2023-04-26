@@ -1,0 +1,13 @@
+<div class="create-question"><a routerLink="create-question" class="createNew">Create New Question</a></div>
+<div class="questions">
+  <div class="question" *ngFor="let question of questions">
+    <div>
+      <div>{{question.title}}</div>
+      <div>type: {{question.type}}</div>
+    </div>
+    <div class="actions">
+      <button (click)="deleteQuestion(question.id)" class="del">Delete</button>
+      <button [routerLink]="['edit-question', question.id]" class="edit1">Edit</button>
+    </div>
+  </div>
+</div>
